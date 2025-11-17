@@ -1494,7 +1494,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		$pdf->setCellPaddings($curentCellPaddinds['L'], $curentCellPaddinds['T'], $curentCellPaddinds['R'], $curentCellPaddinds['B']);
 	}
 
-	function pdf_writelinedesc_ref($parameters=array(), &$object, &$action='') {
+	function pdf_writelinedesc_ref($parameters = array(), &$object = null, &$action = '') {
 	// ultimate PDF hook O_o
 
 		return $this->pdf_writelinedesc($parameters,$object,$action);
@@ -1534,7 +1534,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
      * @param string $action
      * @return void
      */
-    function beforePercentCalculation ($parameters=array(), &$object, &$action='') {
+    function beforePercentCalculation ($parameters = array(), &$object = null, &$action = '') {
         if($object->name == 'sponge' && isset($parameters['object']) && !empty($parameters['object']->lines)) {
             foreach ($parameters['object']->lines as $k => $line) {
                 if(TSubtotal::isModSubtotalLine($line)) {
@@ -1550,7 +1550,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
      * @param string $action
      * @return int
      */
-	function pdf_getlineqty($parameters=array(), &$object, &$action='') {
+	function pdf_getlineqty($parameters = array(), &$object = null, &$action = '') {
 		global $conf,$hideprices, $hidedetails;
 
         $i = intval($parameters['i']);
@@ -1645,7 +1645,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlinetotalexcltax($parameters=array(), &$object, &$action='') {
+	function pdf_getlinetotalexcltax($parameters = array(), &$object = null, &$action = '') {
 	    global $conf, $hideprices, $hookmanager, $hidedetails, $langs;
 
 		if(is_array($parameters)) $i = & $parameters['i'];
@@ -1767,7 +1767,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return $defaultReturn;
 	}
 
-	function pdf_getlinetotalwithtax($parameters=array(), &$object, &$action='') {
+	function pdf_getlinetotalwithtax($parameters = array(), &$object = null, &$action = '') {
 		global $conf;
 
 		if($this->isModSubtotalLine($parameters,$object) ){
@@ -1794,7 +1794,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlineunit($parameters=array(), &$object, &$action='') {
+	function pdf_getlineunit($parameters = array(), &$object = null, &$action = '') {
 		global $conf;
 
 		if($this->isModSubtotalLine($parameters,$object) ){
@@ -1819,7 +1819,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlineupexcltax($parameters=array(), &$object, &$action='') {
+	function pdf_getlineupexcltax($parameters = array(), &$object = null, &$action = '') {
 	    global $conf,$hideprices,$hookmanager, $hidedetails, $langs;
 
 		if(is_array($parameters)) $i = & $parameters['i'];
@@ -1892,7 +1892,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlineremisepercent($parameters=array(), &$object, &$action='') {
+	function pdf_getlineremisepercent($parameters = array(), &$object = null, &$action = '') {
 	    global $conf,$hideprices,$hookmanager, $hidedetails, $langs;
 
         if(is_array($parameters)) $i = & $parameters['i'];
@@ -1945,7 +1945,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlineupwithtax($parameters=array(), &$object, &$action='') {
+	function pdf_getlineupwithtax($parameters = array(), &$object = null, &$action = '') {
 		global $conf,$hideprices, $hidedetails;
 
 		if($this->isModSubtotalLine($parameters,$object) ){
@@ -1973,7 +1973,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlinevatrate($parameters=array(), &$object, &$action='') {
+	function pdf_getlinevatrate($parameters = array(), &$object = null, &$action = '') {
 	    global $conf,$hideprices,$hookmanager, $hidedetails;
 
 //		// Dans le cas des notes de frais report ne pas traiter
@@ -2038,7 +2038,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_getlineprogress($parameters=array(), &$object, &$action) {
+	function pdf_getlineprogress($parameters = array(), &$object = null, &$action = '') {
 		global $conf;
 
 		if($this->isModSubtotalLine($parameters,$object) ){
@@ -2189,7 +2189,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return true;
 	}
 
-	function beforePDFCreation($parameters=array(), &$object, &$action)
+	function beforePDFCreation($parameters = array(), &$object = null, &$action = '')
 	{
 		/**
 		 * @var $pdf    TCPDF
@@ -2392,7 +2392,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 		return 0;
 	}
 
-	function pdf_writelinedesc($parameters=array(), &$object, &$action)
+	function pdf_writelinedesc($parameters = array(), &$object = null, &$action = '')
 	{
 		/**
 		 * @var $pdf    TCPDF

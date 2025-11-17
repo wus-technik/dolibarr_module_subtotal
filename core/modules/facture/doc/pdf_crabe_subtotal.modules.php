@@ -43,7 +43,7 @@ class pdf_crabe_subtotal extends ModelePDFFactures
     var $description;
     var $type;
 
-    var $phpmin = array(4,3,0); // Minimum version of PHP required by module
+    var $phpmin = array(8,3,0); // Minimum version of PHP required by module
     var $version = 'dolibarr';
 
     var $page_largeur;
@@ -1648,4 +1648,3 @@ class pdf_crabe_subtotal extends ModelePDFFactures
 	}
 
 }
-
