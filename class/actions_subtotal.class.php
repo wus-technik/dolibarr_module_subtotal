@@ -25,6 +25,16 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 	 */
 	public $errors = array();
 
+	/**
+	 * @var DoliDB $db
+	 */
+	public $db;
+
+	/**
+	 * @var bool $allow_move_block_lines
+	 */
+	public $allow_move_block_lines = false;
+
     /**
      * @var int Subtotal current level
      */

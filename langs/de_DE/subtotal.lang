@@ -1,0 +1,148 @@
+# SubTotal lang de_DE
+
+Module104777Name = Zwischensumme
+Module104777Desc = Ermöglicht das Hinzufügen von Titeln und Zwischensummen in Angeboten, Aufträgen und Rechnungen
+
+ATMAbout = Dieses Modul wurde von <a href="https://www.atm-consulting.fr" target="_blank">ATM Consulting</a> entwickelt.<br>Dokumentation auf unserem <a href="https://wiki.atm-consulting.fr/index.php/Accueil" target="_blank">Wiki</a>.<br><br>Fragen oder Feedback an <a href="mailto:support@atm-consulting.fr">support@atm-consulting.fr</a>.<br><br>Vertrieb: <a href="mailto:contact@atm-consulting.fr">contact@atm-consulting.fr</a> oder +33 9 77 19 50 70.<br><br>Weitere Module auf <a href="https://www.dolistore.com/search.php?orderby=position&orderway=desc&search_query=atm&submit_search=Rechercher" target="_blank">Dolistore</a>.
+
+title = Titel
+subtotalAddLineDescription = Beschreibung...
+subtitle = Untertitel
+AddTitle = Titel hinzufügen
+SubSubTotal = Unter-Zwischensumme
+AddSubTotal = Zwischensumme hinzufügen
+AddSubTitle = Untertitel hinzufügen
+AddSubSubTotal = Unter-Zwischensumme hinzufügen
+HideInnerLines = Details innerhalb der Titel ausblenden
+SubTotalhidedetails = Preise für Zeilen innerhalb von Titeln ausblenden
+YourTitleLabel = Dein Titel?
+YourTextLabel = Beschreibung eingeben
+deleteWithAllLines = Alle Zeilen unterhalb des Titels löschen
+ConfirmDeleteAllThisLines = %s Zeilen löschen?
+AddBreakPageBefore = Seitenumbruch vor diesem Element hinzufügen
+Level = Ebene
+SubtotalLabel = <b>Zwischensumme: </b>
+
+SUBTOTAL_HIDE_FOLDERS_BY_DEFAULT = Ordner standardmäßig ausblenden
+SUBTOTAL_USE_NEW_FORMAT = Erweiterte Funktionen aktivieren
+SUBTOTAL_USE_NUMEROTATION = Automatische Nummerierung im PDF aktivieren
+SUBTOTAL_ALLOW_ADD_BLOCK = Titel und Zwischensumme hinzufügen erlauben
+SUBTOTAL_ALLOW_EDIT_BLOCK = Titel und Zwischensumme bearbeiten erlauben
+SUBTOTAL_ALLOW_REMOVE_BLOCK = Titel und Zwischensumme löschen erlauben
+SUBTOTAL_ALLOW_DUPLICATE_BLOCK = Block duplizieren erlauben
+SUBTOTAL_ALLOW_ADD_LINE_UNDER_TITLE = Zeile direkt unter einem Titel erlauben
+
+subtotal_title_to_add_under_title = Hinzufügen unter
+SUBTOTAL_TEXT_FOR_TITLE_ORDETSTOINVOICE = Text der Titel beim Fakturieren über Kundenreiter -> Button „Aufträge fakturieren“
+SUBTOTAL_TEXT_FOR_TITLE_ORDETSTOINVOICE_info = Ersetzungs-Schlüssel:<br><b>__REFORDER__</b> = Auftragsreferenz<br><b>__REFCUSTOMER__</b> = Kundenreferenz des Auftrags
+subtotal_add_title_bloc_from_orderstoinvoice = Zwischen Untertitel- und Zwischensummenblock zwischen den Aufträgen einfügen
+SUBTOTAL_ADD_LINE_UNDER_TITLE_AT_END_BLOCK = Das Hinzufügen unter Titel erfolgt am Ende des Blocks
+SUBTOTAL_HIDE_OPTIONS_TITLE = Titel-Optionen ausblenden
+SUBTOTAL_HIDE_OPTIONS_BREAK_PAGE_BEFORE = Option „Seitenumbruch davor“ ausblenden
+SUBTOTAL_HIDE_OPTIONS_BUILD_DOC = Optionen der Dokumentenerzeugung ausblenden
+SUBTOTAL_TITLE_STYLE = Titelformat (B = fett, U = unterstrichen, I = kursiv)
+SUBTOTAL_SUBTOTAL_STYLE = Zwischensummenformat (B = fett, U = unterstrichen, I = kursiv)
+SUBTOTAL_ONE_LINE_IF_HIDE_INNERLINES = Eine Zeile mit Titel und Zwischensumme, wenn „%s“ aktiviert ist (experimentell)
+Duplicate = Duplizieren
+subtotal_duplicate_success = %d Zeilen kopiert
+subtotal_duplicate_lineid_not_found = Duplizieren fehlgeschlagen, Titel-ID nicht gefunden
+subtotal_duplicate_error = Fehler beim Duplizieren
+subtotal_apply_default_tva = Standard-MwSt. auf Block anwenden
+subtotal_apply_default_tva_help = Erlaubt, einen Standard-MwSt.-Satz für jede Zeile des Blocks zu setzen
+subtotal_apply_progress = Fortschritt auf Block anwenden
+subtotal_success_updated_line = Zeilen aktualisiert: %d
+subtotal_error_updated_line = Fehler: %d Zeilen nicht aktualisiert
+subtotal_nb_progress_not_updated = Hinweis: Fortschritt für %d Zeilen nicht aktualisiert (vorheriger Wert kleiner als neuer)
+subtotal_update_nc_success = Summe aktualisiert
+subtotal_update_nc_error = Fehler: Summe nicht aktualisiert
+subtotal_nc_title = NI
+subtotal_nc_title_help = Verwaltung von Blöcken „Nicht enthalten“
+SUBTOTAL_MANAGE_COMPRIS_NONCOMPRIS = Verwaltung von „Nicht enthalten“-Blöcken aktivieren, um Beträge auszuschließen
+subtotalRecap = Zusammenfassung
+subtotalPropalTitle = Angebot %s %s
+subtotalCommandeTitle = Auftrag %s %s
+subtotalInvoiceTitle = Rechnung %s %s
+subtotalRecapLot = Zusammenfassung der Lose
+RecapGeneration = Zusammenfassung nach Titeln erstellen
+SUBTOTAL_KEEP_RECAP_FILE = Zusammenfassungs-PDF nach Zusammenführung behalten
+SUBTOTAL_PROPAL_ADD_RECAP = Zusammenfassung bei Angeboten aktivieren
+SUBTOTAL_COMMANDE_ADD_RECAP = Zusammenfassung bei Aufträgen aktivieren
+SUBTOTAL_INVOICE_ADD_RECAP = Zusammenfassung bei Rechnungen aktivieren
+warning_subtotal_recap_object_element_unknown = Zusammenfassung nach Titeln kann nicht erzeugt werden, unbekanntes Element: %s
+subtotal_add_recap = Zusammenfassung nach Titeln hinzufügen
+SUBTOTAL_AUTO_ADD_SUBTOTAL_ON_ADDING_NEW_TITLE = Beim Hinzufügen eines Titels fehlende Zwischensumme darüber einfügen
+subtotalFreeLineDictionary = Vordefinierte Textzeile
+subtotalLabelForUnderTitle = In Block einfügen:
+subtotalLabelForFreeText = Vordefinierter Text:
+subtotalFreeTextOrDesc = oder eigene Beschreibung eingeben
+AmountBeforeTaxesSubjectToVATX% = Betrag vor Steuern mit %s (%s %%)
+addLineTitle_in_order_shippable = Titel, Summen, Freitext in versendbare Aufträge übernehmen (Zwischensummen ggf. manuell entfernen)
+SubtotalSetup = Einrichtung Zwischensumme
+SubTotalSetupPage = Einrichtung Zwischensumme
+Experimental = Experimentell
+
+#
+# Übersetzungen (ergänzt)
+#
+subtotal = Zwischensumme
+SubTotalhidePrice = Preis der Positionen in Sets ausblenden
+YourSubtotalLabel = Zwischensumme eingeben
+SubtotalLineShowQty = Zwischensummen-Menge anzeigen
+SUBTOTAL_ALLOW_DUPLICATE_LINE = Duplizieren einer Zeile erlauben
+SUBTOTAL_TITLE_SIZE = Titelgröße
+SUBTOTAL_TITLE_SIZE_info = Standard 9, falls nicht angegeben
+SUBTOTAL_REPLACE_WITH_VAT_IF_HIDE_INNERLINES = Mit MwSt.-Details ersetzen, wenn Option „%s“ genutzt wird (experimentell)
+SUBTOTAL_HIDE_PRICE_DEFAULT_CHECKED = Option „Preis der Set-Zeilen ausblenden“ beim PDF-Generieren standardmäßig anhaken
+SUBTOTAL_TFIELD_TO_KEEP_WITH_NC = Spalten, die bei „Nicht enthalten“-Zeilen angezeigt werden sollen
+AddFreeText = Textzeile hinzufügen
+SUBTOTAL_DEFAULT_DISPLAY_QTY_FOR_SUBTOTAL_ON_ELEMENTS = Anzeige der Mengen-Summe auf Zwischensummenlinien aktivieren für Vorlagen:
+SUBTOTAL_DEFAULT_DISPLAY_QTY_FOR_SUBTOTAL_ON_ELEMENTS_info = Anzeige der Summen der Mengen auf Zwischensummenlinien für die ausgewählten Vorlagen aktivieren
+SUBTOTAL_ALLOW_EXTRAFIELDS_ON_TITLE = Extrafelder auf Titeln anzeigen erlauben (Daten werden auf Blockzeilen übernommen)
+showExtrafields = Zusätzliche Felder bearbeiten
+hideExtrafields = Zusätzliche Felder ausblenden
+MoveTitleBlock = Titelblock verschieben
+ShowTotalHTOnSubtotalBlock = Einzelpreis (exkl. MwSt.) der Zwischensumme anzeigen
+ShowReducOnSubtotalBlock = Rabatt auf Zwischensummen-Zeile anzeigen
+SUBTOTAL_NONCOMPRIS_UPDATE_PA_HT = „Nicht enthalten“-Verwaltung leert auch den Einstandspreis
+SUBTOTAL_NONCOMPRIS_UPDATE_PA_HT_info = Achtung: Wenn die Zeile wieder enthalten ist, muss der Einstandspreis erneut eingegeben werden
+addLineTitle_in_order_shippable_TITLE = Option für Linienverwaltung des SubTotal-Moduls bei versandfähigen Aufträgen
+SUBTOTAL_SHIPPABLE_ORDER = Linienverwaltung des SubTotal-Moduls bei versandfähigen Aufträgen
+CloneLSubtotalBlock = Titel-/Zwischensummenblock klonen
+NO_TITLE_SHOW_ON_EXPED_GENERATION = Beim Erzeugen von Lieferungen keine Titelzeilen übernehmen
+Error_subtotal_delete_line = Fehler beim Löschen einer Subtotal-Zeile
+ErrorLoadingLinesFromLinkedOrder = Fehler beim Laden der zum Versand gehörenden Auftragszeilen
+ErrorLoadingLinkedOrder = Fehler beim Laden des verknüpften Auftrags
+ErrorNoLinkedOrder = Kein verknüpfter Auftrag
+SUBTOTAL_TITLE_BACKGROUNDCOLOR = Hintergrundfarbe für Titel im PDF
+SUBTOTAL_SUBTOTAL_BACKGROUNDCOLOR = Hintergrundfarbe für Zwischensummen im PDF
+SUBTOTAL_USE_NEW_FORMAT_HELP = Aktiviert neue Funktionen/Verhalten (u.a. Ebenen für Titel/Zwischensummen)
+SUBTOTAL_LIST_OF_EXTRAFIELDS_PROPALDET = Zusätzliche Felder für Titel in Verkaufsangeboten
+SUBTOTAL_LIST_OF_EXTRAFIELDS_COMMANDEDET = Zusätzliche Felder für Titel in Kundenaufträgen
+SUBTOTAL_LIST_OF_EXTRAFIELDS_FACTUREDET = Zusätzliche Felder für Titel in Kundenrechnungen
+CONCAT_TITLE_LABEL_IN_SUBTOTAL_LABEL = Titel im PDF auf Zwischensummenlinien anhängen
+EXPERIMENTAL = EXPERIMENTELL
+ManageNonCompris = Verwaltung „Nicht enthalten“
+SetupForExtrafields = Einstellungen zu Extrafeldern
+SetupForSubBlocs = Einstellung „Preis der Set-Zeilen ausblenden“
+SUBTOTAL_HIDE_DOCUMENT_TOTAL = Gesamtsummen ausblenden
+SUBTOTAL_IF_HIDE_PRICES_SHOW_QTY = Menge auf Produktzeilen anzeigen, wenn Preise ausgeblendet sind
+SUBTOTAL_SHOW_QTY_ON_TITLES = Menge auf Zwischensummenlinien anzeigen (nur bei virtuellem Produkt)
+SUBTOTAL_ONLY_HIDE_SUBPRODUCTS_PRICES = Nur Preise von Unterprodukten ausblenden
+SubtotalExperimentalZone = Experimentelle/veraltete Konfigurationen
+
+QuickSummary = Schnellübersicht
+SUBTOTAL_DISABLE_SUMMARY = Dokument-„Schnellübersicht“ deaktivieren (erscheint links, wenn das Dokument Titel hat)
+
+Subtotal_HideAll = Alle Zeilen ausblenden
+Subtotal_ShowAll = Alle Zeilen einblenden
+DISPLAY_MARGIN_ON_SUBTOTALS = Marge auf Zwischensummen anzeigen
+
+LinkedShippings = Verknüpfte Lieferaufträge
+LinkedShipping = Verknüpfter Lieferauftrag
+LinkedDeliveries = Verknüpfte Lieferscheine
+LinkedDelivery = Verknüpfter Lieferschein
+SubtotalOptions = Zwischensummen-Optionen
+AddShippingListToTile = Referenzen der verknüpften Liefer-/Versandaufträge in die Titelbeschreibung einfügen
+UseHiddenConfToAutoCheck = Für Voreinstellung diese Option in den versteckten Einstellungen aktivieren
+
+SubtotalsAndTitlesActionBtnLabel = Titel & Zwischensumme
