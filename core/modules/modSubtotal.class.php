@@ -30,6 +30,9 @@ include_once DOL_DOCUMENT_ROOT . "/core/modules/DolibarrModules.class.php";
  */
 class modSubtotal extends DolibarrModules
 {
+	public $special = 0;
+	public $dictionnaries = array();
+	public $menus = array();
 
 	/**
 	 * 	Constructor. Define names, constants, directories, boxes, permissions
