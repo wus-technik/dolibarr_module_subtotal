@@ -156,7 +156,7 @@ class modSubtotal extends DolibarrModules
 		// List of modules id to disable if this one is disabled
 		$this->requiredby = array();
 		// Minimum version of PHP required by module
-		$this->phpmin = array(8,3);
+		$this->phpmin = array(8,2);
 		// Minimum version of Dolibarr required by module
 		$this->need_dolibarr_version = array(22,0);
 		$this->langfiles = array("subtotal@subtotal"); // langfiles@titre
