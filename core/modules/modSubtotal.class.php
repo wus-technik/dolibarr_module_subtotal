@@ -137,9 +137,7 @@ class modSubtotal extends DolibarrModules
 			),
 			// Set here all workflow context managed by module
 			//'workflow' => array('order' => array('WORKFLOW_ORDER_AUTOCREATE_INVOICE')),
-			'tpl' => array(
-				'originproductline'
-			)
+			'tpl' => 1
 		);
 
 		// Data directories to create when module is enabled.
