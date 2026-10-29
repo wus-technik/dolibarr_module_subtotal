@@ -372,6 +372,8 @@ class TSubtotal {
 	 */
 	public static function getTotalBlockFromTitle(&$object, &$line, $breakOnTitle = false)
 	{
+		global $mysoc;
+
 		dol_include_once('/core/lib/price.lib.php');
 		$TTot = array('total_pa_ht' => 0, 'total_options' => 0, 'total_ht' => 0, 'total_tva' => 0, 'total_ttc' => 0, 'TTotal_tva' => array(), 'multicurrency_total_ht' => 0, 'multicurrency_total_tva' => 0, 'multicurrency_total_ttc' => 0, 'TTotal_tva_multicurrency' => array());
 
@@ -383,7 +385,7 @@ class TSubtotal {
 
 			if (!empty($l->array_options['options_subtotal_nc']))
 			{
-				$tabprice = calcul_price_total($l->qty, $l->subprice, $l->remise_percent, $l->tva_tx, $l->localtax1_tx, $l->localtax2_tx, 0, 'HT', $l->info_bits, $l->product_type);
+				$tabprice = calcul_price_total($l->qty, $l->subprice, $l->remise_percent, $l->tva_tx, $l->localtax1_tx, $l->localtax2_tx, 0, 'HT', $l->info_bits, $l->product_type, $mysoc);
 				$TTot['total_options'] += $tabprice[0]; // total ht
 			}
 			else
