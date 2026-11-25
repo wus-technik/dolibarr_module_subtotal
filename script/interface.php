@@ -133,7 +133,7 @@ function _updateHideBlockData($jsonResponse) {
 		return false;
 	}
 
-	$titleStatusList = $data['titleStatusList'];
+	$titleStatusList = $data['titleStatusList'] ?? array(); // missing when no block state is sent
 
 
 	if(!empty($titleStatusList)){

@@ -395,16 +395,17 @@ class TSubtotal {
 				if (! self::isSubtotal($l))
 				{
 					$TTot['total_pa_ht'] += $l->pa_ht * $l->qty;
-					$TTot['total_subprice'] += $l->subprice * $l->qty;
-					$TTot['total_unit_subprice'] += $l->subprice; // Somme des prix unitaires non remisés
+					// "?? 0": these keys are not initialised above (an empty block must still return them unset)
+					$TTot['total_subprice'] = ($TTot['total_subprice'] ?? 0) + $l->subprice * $l->qty;
+					$TTot['total_unit_subprice'] = ($TTot['total_unit_subprice'] ?? 0) + $l->subprice; // Somme des prix unitaires non remisés
 					$TTot['total_ht'] += $l->total_ht;
 					$TTot['total_tva'] += $l->total_tva;
 					$TTot['total_ttc'] += $l->total_ttc;
-					$TTot['TTotal_tva'][$l->tva_tx] += $l->total_tva;
+					$TTot['TTotal_tva'][$l->tva_tx] = ($TTot['TTotal_tva'][$l->tva_tx] ?? 0) + $l->total_tva;
 					$TTot['multicurrency_total_ht'] += $l->multicurrency_total_ht;
 					$TTot['multicurrency_total_tva'] += $l->multicurrency_total_tva;
 					$TTot['multicurrency_total_ttc'] += $l->multicurrency_total_ttc;
-					$TTot['TTotal_tva_multicurrency'][$l->tva_tx] += $l->multicurrency_total_tva;
+					$TTot['TTotal_tva_multicurrency'][$l->tva_tx] = ($TTot['TTotal_tva_multicurrency'][$l->tva_tx] ?? 0) + $l->multicurrency_total_tva;
 				}
 
 			}

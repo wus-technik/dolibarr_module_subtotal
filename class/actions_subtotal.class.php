@@ -1118,6 +1118,9 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
                         $total+= $result;
                         // TODO check si les 3 lignes du dessous sont corrects
                         $total_tva += $sign * ($l->total_tva / ($l->situation_percent / 100)) * $progress;
+                        if (! isset($TTotal_tva[$l->tva_tx])) {
+                            $TTotal_tva[$l->tva_tx] = 0;
+                        }
                         $TTotal_tva[$l->tva_tx] += $sign * ($l->total_tva / ($l->situation_percent / 100)) * $progress;
                         $total_ttc += $sign * ($l->total_tva / ($l->total_ttc / 100)) * $progress;
 
