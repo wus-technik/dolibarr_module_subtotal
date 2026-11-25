@@ -1297,7 +1297,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 			if ($fillBackground) {
 				$pdf->SetFillColor($backgroundColor[0], $backgroundColor[1], $backgroundColor[2]);
 			}
-			$pdf->SetXY($object->context['subtotalPdfModelInfo']->marge_gauche, $posy+$backgroundCellPosYOffset);
+			$pdf->SetXY($object->context['subtotalPdfModelInfo']->marge_droite, $posy+$backgroundCellPosYOffset);
 			$pdf->MultiCell($object->context['subtotalPdfModelInfo']->page_largeur - $object->context['subtotalPdfModelInfo']->marge_gauche - $object->context['subtotalPdfModelInfo']->marge_droite, $cell_height, '', 0, '', 1);
 		}
 		else{
@@ -1490,7 +1490,7 @@ class ActionsSubtotal extends \subtotal\RetroCompatCommonHookActions
 
 			// POUR LES PDF DE TYPE PDF_EVOLUTION (ceux avec les colonnes configurables)
 			if(!empty($object->context['subtotalPdfModelInfo']->cols)){
-				$bgStartX = $object->context['subtotalPdfModelInfo']->marge_gauche;
+				$bgStartX = $object->context['subtotalPdfModelInfo']->marge_droite;
 				$bgW = $object->context['subtotalPdfModelInfo']->page_largeur - $object->context['subtotalPdfModelInfo']->marge_gauche - $object->context['subtotalPdfModelInfo']->marge_droite;
 			}
 
